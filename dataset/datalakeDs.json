@@ -1,0 +1,167 @@
+{
+	"name": "datalakeDs",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_dataLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "code",
+				"type": "String"
+			},
+			{
+				"name": "current",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "name_short",
+				"type": "String"
+			},
+			{
+				"name": "name_tv",
+				"type": "String"
+			},
+			{
+				"name": "gender",
+				"type": "String"
+			},
+			{
+				"name": "function",
+				"type": "String"
+			},
+			{
+				"name": "country_code",
+				"type": "String"
+			},
+			{
+				"name": "country",
+				"type": "String"
+			},
+			{
+				"name": "country_long",
+				"type": "String"
+			},
+			{
+				"name": "nationality",
+				"type": "String"
+			},
+			{
+				"name": "nationality_long",
+				"type": "String"
+			},
+			{
+				"name": "nationality_code",
+				"type": "String"
+			},
+			{
+				"name": "height",
+				"type": "String"
+			},
+			{
+				"name": "weight",
+				"type": "String"
+			},
+			{
+				"name": "disciplines",
+				"type": "String"
+			},
+			{
+				"name": "events",
+				"type": "String"
+			},
+			{
+				"name": "birth_date",
+				"type": "String"
+			},
+			{
+				"name": "birth_place",
+				"type": "String"
+			},
+			{
+				"name": "birth_country",
+				"type": "String"
+			},
+			{
+				"name": "residence_place",
+				"type": "String"
+			},
+			{
+				"name": "residence_country",
+				"type": "String"
+			},
+			{
+				"name": "nickname",
+				"type": "String"
+			},
+			{
+				"name": "hobbies",
+				"type": "String"
+			},
+			{
+				"name": "occupation",
+				"type": "String"
+			},
+			{
+				"name": "education",
+				"type": "String"
+			},
+			{
+				"name": "family",
+				"type": "String"
+			},
+			{
+				"name": "lang",
+				"type": "String"
+			},
+			{
+				"name": "coach",
+				"type": "String"
+			},
+			{
+				"name": "reason",
+				"type": "String"
+			},
+			{
+				"name": "hero",
+				"type": "String"
+			},
+			{
+				"name": "influence",
+				"type": "String"
+			},
+			{
+				"name": "philosophy",
+				"type": "String"
+			},
+			{
+				"name": "sporting_relatives",
+				"type": "String"
+			},
+			{
+				"name": "ritual",
+				"type": "String"
+			},
+			{
+				"name": "other_sports",
+				"type": "String"
+			}
+		]
+	}
+}

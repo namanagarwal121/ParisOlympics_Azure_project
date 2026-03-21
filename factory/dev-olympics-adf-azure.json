@@ -1,0 +1,9 @@
+{
+	"name": "dev-olympics-adf-azure",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9f862537-e92f-4776-a55f-902420fa34dc",
+		"tenantId": "3556839d-9937-4347-8268-a77efe9b4022"
+	}
+}

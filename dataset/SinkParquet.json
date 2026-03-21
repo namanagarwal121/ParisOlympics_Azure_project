@@ -1,0 +1,174 @@
+{
+	"name": "SinkParquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_dataLake",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"s_name": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().s_name",
+					"type": "Expression"
+				},
+				"folderPath": "nocs",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "code",
+				"type": "UTF8"
+			},
+			{
+				"name": "current",
+				"type": "UTF8"
+			},
+			{
+				"name": "name",
+				"type": "UTF8"
+			},
+			{
+				"name": "name_short",
+				"type": "UTF8"
+			},
+			{
+				"name": "name_tv",
+				"type": "UTF8"
+			},
+			{
+				"name": "gender",
+				"type": "UTF8"
+			},
+			{
+				"name": "function",
+				"type": "UTF8"
+			},
+			{
+				"name": "country_code",
+				"type": "UTF8"
+			},
+			{
+				"name": "country",
+				"type": "UTF8"
+			},
+			{
+				"name": "country_long",
+				"type": "UTF8"
+			},
+			{
+				"name": "nationality",
+				"type": "UTF8"
+			},
+			{
+				"name": "nationality_long",
+				"type": "UTF8"
+			},
+			{
+				"name": "nationality_code",
+				"type": "UTF8"
+			},
+			{
+				"name": "height",
+				"type": "UTF8"
+			},
+			{
+				"name": "weight",
+				"type": "UTF8"
+			},
+			{
+				"name": "disciplines",
+				"type": "UTF8"
+			},
+			{
+				"name": "events",
+				"type": "UTF8"
+			},
+			{
+				"name": "birth_date",
+				"type": "UTF8"
+			},
+			{
+				"name": "birth_place",
+				"type": "UTF8"
+			},
+			{
+				"name": "birth_country",
+				"type": "UTF8"
+			},
+			{
+				"name": "residence_place",
+				"type": "UTF8"
+			},
+			{
+				"name": "residence_country",
+				"type": "UTF8"
+			},
+			{
+				"name": "nickname",
+				"type": "UTF8"
+			},
+			{
+				"name": "hobbies",
+				"type": "UTF8"
+			},
+			{
+				"name": "occupation",
+				"type": "UTF8"
+			},
+			{
+				"name": "education",
+				"type": "UTF8"
+			},
+			{
+				"name": "family",
+				"type": "UTF8"
+			},
+			{
+				"name": "lang",
+				"type": "UTF8"
+			},
+			{
+				"name": "coach",
+				"type": "UTF8"
+			},
+			{
+				"name": "reason",
+				"type": "UTF8"
+			},
+			{
+				"name": "hero",
+				"type": "UTF8"
+			},
+			{
+				"name": "influence",
+				"type": "UTF8"
+			},
+			{
+				"name": "philosophy",
+				"type": "UTF8"
+			},
+			{
+				"name": "sporting_relatives",
+				"type": "UTF8"
+			},
+			{
+				"name": "ritual",
+				"type": "UTF8"
+			},
+			{
+				"name": "other_sports",
+				"type": "UTF8"
+			}
+		]
+	}
+}
